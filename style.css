@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    /* font-family */
+    --font-primary: 'Red Hat Display', sans-serif;
+    --font-size-parag:1em;
+
+    /* primary-colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:var(--font-primary);   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url('./images/pattern-background-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;    
+    background-color:var(--pale-blue);
+    height:100vh;  
+}
+
+.container{
+    display:flex;   
+    position: relative;    
+    margin: 0 auto;  
+    align-items: center; 
+   
+}
+.card{
+   
+    background-color: white;
+    width:420px;
+    max-width:420px;
+    border-radius: 1rem;
+    position: relative;   
+}
+.card img{
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 1rem 1rem 0 0;
+}
+.itens-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.itens-flex-card{
+    width:76%;
+    text-align: center;
+}
+.title-one{
+    margin: 1.7rem 0 0.75rem;
+}
+.title-one h1 {
+    font-weight: 900;
+    font-size: 1.74rem;
+    color: hsl(223, 47%, 23%);
+}
+.text-desc {
+    text-align: center;
+    line-height: 1.6rem;   
+    margin: 0.75rem 0;
+    color:hsl(224, 23%, 55%);
+    font-size: var(--font-primary);
+}
+.itens-price{
+    background: hsl(225, 100%, 98%);
+    width:100%;
+    display:grid;
+    grid-template-columns: 50px 1fr 60px;
+    height:10vh;
+    min-height: 10vh;  
+    padding: 0 0.50rem;
+    border-radius: 0.75rem;
+    align-items: center;
+}
+.itens-price-l{
+    display: flex;   
+    align-items: flex-start;
+    margin: 0 0.75rem;
+    flex-direction: column;
+}
+.itens-price span img {
+    width: 74%!important;
+}
+.itens-price-l span{
+    font-weight: 900;
+}
+.itens-price span { 
+    display: flex;  
+}
+.itens-price-l span.price{
+    font-weight: 500;
+     color:hsl(224, 23%, 55%);
+}
+.link-price a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    position: relative;
+    right: 0.50rem;
+    transition:all 0.3s linear
+}
+.link-price a:hover {
+    color: hsl(245deg 75% 52% / 50%);
+    text-decoration:none;
+}
+.btn-payment{
+    width:100%;
+    padding: 2rem 0 1.5rem;   
+}
+
+.btn-payment button{  
+    width: 100%;
+    border: none;
+    background:var(--bright-blue);
+    border-radius: 0.75rem;
+    padding:1rem 0;
+    font-weight: 900;
+    color:#fff;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.2s linear, box-shadow 0.4s linear;
+}
+.btn-payment button:hover{
+    background:hsl(245deg 75% 52% / 75%);   
+    box-shadow: 0px 12px 20px 2px rgb(56 41 224 / 35%);
+}
+.btn-cancel{
+   margin: 0.50rem 0 2.5rem ;  
+  
+}
+.btn-cancel a{  
+   color: hsl(224, 23%, 55%);
+   transition:color .3s linear;
+   outline: none;
+   text-decoration: none;
+   font-weight: 700;
+}
+.btn-cancel a:hover{
+    color:hsl(223, 47%, 23%);
+}
